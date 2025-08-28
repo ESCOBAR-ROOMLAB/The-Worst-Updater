@@ -20,8 +20,7 @@ INSTRUCTIONS and NOTES
 3. Clone the remote repository that contains the script and other needed files
 - Type the following commands (or just copy and paste them)
 
-git clone https://github.com/ESCOBAR-ROOMLAB/UTILITIES
-cd UTILITIES/Cisco_Utilities/The_Worst_Updater
+git clone https://github.com/ESCOBAR-ROOMLAB/The-Worst-Updater
 chmod +x The_Worst_Updater.sh
 
 

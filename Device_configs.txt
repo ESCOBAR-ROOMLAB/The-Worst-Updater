@@ -1,0 +1,28 @@
+en
+config t
+***FOR ALL DEVICES***
+ip scp server enable
+crypto key gen rsa label SSH modulus 2048
+ip ssh server algorithm authentication publickey 
+username <yourusername> priv 15
+ip ssh bulk-mode 5242880
+ip ssh pubkey-chain
+user <yourusername>
+key-string
+<paste your public key formatted for Cisco here. The script will display it on the terminal at the beginning>
+exit
+exit
+aaa new-model
+aaa authorization exec default local
+line vty 0 5
+transport input ssh
+privilege level 15
+!
+!
+***ONLY FOR BLANK DEVICES***
+int vlan 1
+ ip add X.X.X.X ZZZ.ZZZ.ZZZ
+ desc ***FOR UPDATES ONLY***
+ no shut
+!
+!

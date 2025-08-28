@@ -1,0 +1,8 @@
+config t
+no boot system
+boot system flash:c1100-universalk9.17.15.03a.SPA.bin
+do wr
+do reload
+
+
+!

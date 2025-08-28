@@ -1,0 +1,2 @@
+delete /force flash:c1100-universalk9.17.15.03a.SPA.bin
+exit
